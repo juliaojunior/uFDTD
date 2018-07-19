@@ -50,31 +50,31 @@ equação da primeira temos
    \delta f'(x_0) +
         \frac{2}{3!}\left(\frac{\delta}{2}\right)^3 f'''(x_0) + \ldots
 \end{equation}
-Dividing by $\delta$ produces
+Dividindo por $\delta$ temos
 \begin{equation}
   \frac{f\!\left(x_0+\frac{\delta}{2}\right) -
         f\!\left(x_0-\frac{\delta}{2}\right)}{\delta} = 
    f'(x_0) +
         \frac{1}{3!}\frac{\delta^2}{2^2} f'''(x_0) + \ldots
 \end{equation}
-Thus the term on the left is equal to the derivative of the function
-at the point $x_0$ plus a term which depends on $\delta^2$ plus an
-infinite number of other terms which are not shown.  For the terms
-which are not shown, the next would depend on $\delta^4$ and all
-subsequent terms would depend on even higher powers of $\delta$.
-Rearranging slightly, this relationship is often stated as
+Assim, o termo à esquerda é igual à derivada da função
+no ponto $ x_0 $ mais um termo que depende de $ \ delta ^ 2 $ mais um
+número infinito de outros termos que não são mostrados. Para os termos
+que não são mostrados, o próximo dependeria de $ \ delta ^ 4 $ e todos
+os termos subsequentes dependeriam de potências ainda maiores de $ \ delta $.
+Com um pouco de arrumação, essa relação é pode ser escrita como
 \begin{equation}
   \left.\frac{df(x)}{dx}\right|_{x=x_0} = 
   \frac{f\!\left(x_0+\frac{\delta}{2}\right) -
         f\!\left(x_0-\frac{\delta}{2}\right)}{\delta} + O(\delta^2).
 \end{equation}
-The ``big-Oh'' term represents all the terms that are not explicitly
-shown and the value in parentheses, i.e., $\delta^2$, indicates the
-lowest order of $\delta$ in these hidden terms.  If $\delta$ is
-sufficiently small, a reasonable approximation to the derivative may
-be obtained by simply neglecting all the terms represented by the
-``big-Oh'' term.  Thus, the central-difference approximation is given
-by
+O termo "$O$" representa todos os termos que não são explicitamente
+mostrados e o valor entre parênteses, ou seja, $ \ delta ^ 2 $, indica a
+ordem mais baixa de $ \ delta $ nesses termos ocultos. Se $ \ delta $ é
+suficientemente pequeno, uma aproximação razoável da derivada pode
+ser obtida simplesmente ignorando todos os termos representados pelo
+termo "$O$". Assim, a aproximação da diferença central é dada
+por
 \begin{equation}
   \left.\frac{df(x)}{dx}\right|_{x=x_0} \approx
   \frac{f\!\left(x_0+\frac{\delta}{2}\right) -
