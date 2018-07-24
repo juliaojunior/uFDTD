@@ -80,16 +80,16 @@ por
   \frac{f\!\left(x_0+\frac{\delta}{2}\right) -
         f\!\left(x_0-\frac{\delta}{2}\right)}{\delta}.
 \end{equation}
-Note that the central difference provides an approximation of the
-derivative of the function at $x_0$, but the function is not actually
-sampled there.  Instead, the function is sampled at the neighboring
-points $x_0+\delta/2$ and $x_0-\delta/2$.  Since the lowest power of
-$\delta$ being ignored is second order, the central difference is said
-to have second-order accuracy or second-order behavior.  This implies
-that if $\delta$ is reduced by a factor of $10$, the error in the
-approximation should be reduced by a factor of $100$ (at least
-approximately).  In the limit as $\delta$ goes to zero, the
-approximation becomes exact.
+Perceba que a diferença central nos dá uma aproximação da
+derivada da função em $x_0$, mas a função não é realmente 
+tomada neste ponto. Ao invés disso, a função é tomada nos pontos 
+vizinhos $x_0+\delta/2$ e $x_0-\delta/2$. Como a menor potência de 
+$\delta$ sendo ignorada é de segunda ordem, a diferença central é indicada 
+como tendo uma precisão de segunda ordem (ou um comportamento de segunda ordem). 
+Isto implica que se $\delta$ é reduzida por um fator de $10$, o erro na 
+aproximação deveria ser reduzido por um fator de $100$ (no mínimo).
+ No limite onde $\delta$ vai para zero, a 
+ aproximação se torna exata.
 
 One can construct higher-order central differences.  In order to get
 higher-order behavior, more terms, i.e., more sample points, must be
