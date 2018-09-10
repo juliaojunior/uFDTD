@@ -91,19 +91,28 @@ aproximação deveria ser reduzido por um fator de $100$ (no mínimo).
  No limite onde $\delta$ vai para zero, a 
  aproximação se torna exata.
 
-One can construct higher-order central differences.  In order to get
-higher-order behavior, more terms, i.e., more sample points, must be
-used.  Appendix \ref{ap:diff} presents the construction of a
-fourth-order central difference.  The use of higher-order central
-differences in FDTD schemes is certainly possible, but there are some
-complications which arise because of the increased ``stencil'' of the
-difference operator.  For example, when a PEC is present, it is
-possible that the difference operator will extend into the PEC
-prematurely or it may extend to the other side of a PEC sheet.
-Because of these types of issues, we will only consider the use of
-second-order central difference.
+É possível escrever diferenças centrais de ordens mais altas. Para obter
+comportamento de tais ordens, i.e., mais pontos termos, precisamos usar
+mais pontos de amostragem. O apêndice \ref{ap:diff} mostra a construção de 
+uma diferença central de quarta ordem. A utilização de diferenças centrais de 
+ordem mais alta em FDTD é possível, certamente. Mas existem algumas 
+complicações que surgem por causa do crescente ``stencil'' do 
+operador diferença. Por exemplo, quando um PEC está presente, é 
+possível que o operador diferença se extenda para dentro do PEC 
+prematuramente ou se extenda para depois da camada do PEC. 
+Por esses tipos de problemas, consideraremos apenas o uso das 
+diferenças centrais de segunda ordem.
 
-\section{The Yee Algorithm}
+
+#################################################
+
+#################################################
+
+#################################################
+
+#################################################
+
+\section{O Algoritimo de Yee}
 
 The FDTD algorithm as first proposed by Kane Yee in 1966 employs
 second-order central differences.  The algorithm can be summarized as
